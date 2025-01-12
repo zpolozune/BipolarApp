@@ -138,6 +138,15 @@ namespace BipolarApp
             set => LevelOfSuicidality = value;
         }
 
+        private Int32 _levelOfSuicidality
+        {
+            get => _levelOfSuicidality;
+            set
+            {
+                _levelOfSuicidality = (Int32)this.LevelOfSuicidality;
+            }
+        }
+
         private DateTime RecordedDateTime
         {
             get => RecordedDateTime;
@@ -154,10 +163,22 @@ namespace BipolarApp
             set => Grandiosity = value;
         }
 
+        private int _grandiosity
+        {
+            get => _grandiosity;
+            set => _grandiosity = (int)this.Grandiosity;
+        }
+
         SeverityLevels DecreasedNeedForSleep
         {
             get => DecreasedNeedForSleep;
             set => DecreasedNeedForSleep = value;
+        }
+
+        private int _decreasedNeedForSleep
+        {
+            get => _decreasedNeedForSleep;
+            set => _decreasedNeedForSleep = (int)this.DecreasedNeedForSleep;
         }
 
         SeverityLevels PressuredSpeech
@@ -166,16 +187,33 @@ namespace BipolarApp
             set => PressuredSpeech = value;
         }
 
+        private int _pressuredSpeech
+        {
+            get => _pressuredSpeech;
+            set => _pressuredSpeech = (int)this.PressuredSpeech;
+        }
+
         SeverityLevels FlightOfIdeas
         {
             get => FlightOfIdeas;
             set => FlightOfIdeas = value;
         }
 
+        private int _flightOfIdeas
+        {
+            get => _flightOfIdeas;
+            set => _flightOfIdeas = (int)this.FlightOfIdeas;
+        }
+
         SeverityLevels Distractibility
         {
             get => Distractibility;
             set => Distractibility = value;
+        }
+        private int _distractibility
+        {
+            get => _distractibility;
+            set => _distractibility = (int)this.Distractibility;
         }
 
         SeverityLevels GoalDirectedActivity
@@ -184,16 +222,34 @@ namespace BipolarApp
             set => GoalDirectedActivity = value;
         }
 
+        private int _goalDirectedActivity
+        {
+            get => _goalDirectedActivity;
+            set => _goalDirectedActivity = (int)this.GoalDirectedActivity;
+        }
+
         SeverityLevels PsychomotorAgitation
         {
             get => PsychomotorAgitation;
             set => PsychomotorAgitation = value;
         }
 
+        private int _psychomotorAgitation
+        {
+            get => _psychomotorAgitation;
+            set => _psychomotorAgitation = (int)this.PsychomotorAgitation;
+        }
+
         SeverityLevels RiskyImpulsivity
         {
             get => RiskyImpulsivity;
             set => RiskyImpulsivity = value;
+        }
+
+        private int _riskyImpuslivity
+        {
+            get => _riskyImpuslivity;
+            set => _riskyImpuslivity = (int)this.RiskyImpulsivity;
         }
 
         SeverityLevels DisruptionOfDailyLife
@@ -314,6 +370,7 @@ namespace BipolarApp
         Extreme = 8
     }
 
+
     enum Suicidality
     {
         None = 0,
@@ -324,7 +381,7 @@ namespace BipolarApp
     }
 
 
-
+}
 
 
 
